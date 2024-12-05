@@ -31,7 +31,7 @@ The AraGen leaderboard makes three key contributions:
 We believe that AraGen addresses persistent issues of data contamination with its dynamic evaluation approach, preserving the benchmark's integrity. It also serves as the first application of a scalable, language-agnostic framework for a nuanced and fair model assessment, which represents an important effort in understanding LLM performance across diverse linguistic contexts and sets a new standard for comprehensive model benchmarking.
 
 <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.4.0/gradio.js"> </script>
-<gradio-app theme_mode="light" space="inceptionai/AraGen-Leaderboard"></gradio-app>
+<gradio-app theme_mode="dark" space="inceptionai/AraGen-Leaderboard"></gradio-app>
 
 ## Summary
 
