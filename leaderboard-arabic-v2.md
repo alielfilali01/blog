@@ -59,6 +59,7 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 - Arabic exams
 - Ara stem not available yet
 - Alrage --> Manel
+
 We introduce also the ALRAGE task: Arabic Language Retrieval Augmented Generation Evaluation. It's based on the new metric from lighteval: LLM-as-a-judge
 The evaluation process begins with inputs from the ALRAGE dataset https://huggingface.co/datasets/OALL/ALRAGE , which includes a question, a set of candidate contexts, and a gold answer, along with the generated answer from the model being evaluated. The core of the evaluation relies on Qwen2.5-72B-Instruct as a judge model, which receives a carefully structured Arabic prompt containing the original question, the model's generated answer, and the gold answer.
 The judge evaluates the response according to a detailed scoring rubric ranging from 0 to 10, where scores of 0-2 indicate completely incorrect answers, 3-4 represent partially correct answers with significant errors, 5-6 denote moderately accurate responses, 7-8 signify good answers with minor imperfections, and 9-10 are reserved for excellent and accurate answers. These scores are then normalized to a 0-1 range through the JudgeMetricWrapper class
