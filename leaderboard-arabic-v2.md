@@ -29,11 +29,19 @@ authors:
 
 # The Open Arabic LLM Leaderboard 2
 
-## Current status of Arabic LLMs leaderboards --> Ali + Basma
-The growing availability of LLMs supporting Arabic, both as monolingual and multilingual models, prompted the community to create dedicated Arabic language leaderboards. In May 2023, TII, A2I2, and HuggingFace launched the Open Arabic LLM Leaderboard, the first on HuggingFace to feature over 50 selective Arabic benchmarks including reading comprehension, sentiment analysis, and question answering. Shortly after, a collaboration between SDAIA and the King Salman Global Academy for Arabic Language introduced the Balsam Index, which includes approximately 1,400 datasets with 50,000 questions covering 67 tasks, such as grammar correction, paraphrasing, cause-and-effect classification, and text comprehension. Later, in December, Inception and MBZUAI unveiled the AraGen leaderboard, which introduces the 3C3H measure for evaluating model responses, uses dynamic evaluation cycles with private testing, and provides a specialized Arabic evaluation dataset to assess LLMs across various tasks and domains.
+## Current status of Arabic LLMs leaderboards --> Ali + Basma (DONE)
+The growing availability of LLMs supporting Arabic, both as monolingual and multilingual models, prompted the community to create dedicated Arabic language leaderboards. 
 
-- They were dedicated to specific benchmarks
-- You do the eval on your own and submit results
+Previously, Arabic-focused leaderboards were typically confined to narrow benchmarks introduced by specific authors, often as demos for their work. In these cases, the authors would set up leaderboards to demonstrate how models performed on a particular task or dataset. Alternatively, other leaderboards required users to run evaluations on their own computing resources and then submit a JSON file containing their results for display.
+
+While these approaches helped spark initial interest in Arabic benchmarking, they also introduced several challenges:
+1. **Resource Limitations**: Many community members lack access to the substantial computational resources needed to evaluate their models—especially if they want to conduct frequent, iterative experiments (e.g., testing a new fine-tuning technique or hyperparameter setting) which helps improving the models capabilities in Arabic and contribute to the collective research efforts by the community. This high cost in both time and compute power can become a major barrier to participation.
+
+2. **Integrity of Reported Results**: Because some platforms required users to evaluate their models independently and then simply submit a file of scores, there was no robust mechanism to ensure those results were accurate or even produced through a genuine evaluation. This lack of centralized verification could potentially undermine the credibility and fairness of the leaderboard.
+
+These limitations underscore the need for a more unified, accessible, and transparent benchmarking platform—one that not only enables but encourages genuine and reproducible experimentation for the entire Arabic NLP community.
+
+In May 2023, 2A2I, TII, and HuggingFace launched the Open Arabic LLM Leaderboard, the first on HuggingFace to feature over 50 selective Arabic benchmarks including reading comprehension, sentiment analysis, and question answering. Shortly after, a collaboration between SDAIA and the King Salman Global Academy for Arabic Language introduced the Balsam Index, which includes approximately 1,400 datasets with 50,000 questions covering 67 tasks, such as grammar correction, paraphrasing, cause-and-effect classification, and text comprehension. Later, in December, Inception and MBZUAI unveiled the AraGen Leaderboard, a generative tasks evaluation pipeline, which introduced the 3C3H evaluation measure, uses dynamic evaluation cycles with private testing, and provides a specialized Arabic evaluation dataset to assess LLMs across four main tasks.
 
 ## Impact of the previous leaderboard --> Ahmed + Basma
 
