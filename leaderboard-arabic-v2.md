@@ -69,7 +69,23 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 - We want Arabic related benchmarks: Arabic grammar, historical relevant,
 - Cite some discussions from the community (critics of OALL)
 - Justify the deletion of some benchmarks (saturation on some benchmarks, some of them are MT)
-  
+
+---
+
+Recent community discussions, including critiques of the Open Arabic LLM Leaderboard (OALL) and similar projects, have revealed significant gaps in current benchmarking approaches. Researchers, developers, and language enthusiasts have called for more direct evaluations of Arabic-centric tasks, greater transparency in benchmark creation, and more inclusive datasets that span different dialects, domains, and applications. Addressing these concerns has been a key driver behind the design of the new leaderboard.
+
+Arabic poses unique challenges and features that deserve specialized evaluation, beyond those captured by general-purpose NLP tasks. These include aspects such as Arabic grammar, complex morphology, dialectal diversity, and culturally sensitive safety-related questions. A leaderboard that focuses on these nuances can more effectively assess how well models perform in real-world Arabic language contexts.
+
+A significant portion of the datasets and tasks used in the first version of OALL stemmed from content or contexts tied to non-Arabic-speaking regions. These tasks, when repurposed for Arabic, often failed to resonate with real-world use cases or address the practical needs of Arabic-speaking communities. Additionally, many of the tasks relied on direct translations from English, which frequently resulted in linguistic and contextual mismatches. Subtle morphological and syntactic nuances unique to Arabic were often lost in the translation process, making these tasks less reliable measures of true Arabic language understanding and modeling.
+
+By incorporating evaluation tasks developed natively in Arabic, in this new leaderboard we try to capture essential aspects of the language, such as its rich morphology, nuanced syntax, and context-specific usage that are often overlooked in translated tasks. This shift ensures more authentic and meaningful benchmarks for assessing Arabic LLM performance.
+
+Also, it is worth mentioning that over time, we observed that some benchmarks used in the first version of OALL became saturated. Models achieved near-maximum scores, rendering these benchmarks less useful for distinguishing between incremental improvements. To address this, the new leaderboard removes or replaces such tasks, ensuring a more up-to-date evaluation suite.
+
+As part of this release, we also introduce ALRAGE (Arabic Language RAG Evaluation), a public, native Arabic benchmark designed to assess model performance in simulated RAG scenarios. ALRAGE evaluates how effectively models handle Arabic-specific challenges in retrieval and generation, offering a robust metric for tasks that simulate real-world usage of RAG-based systems.
+
+---
+
 ## What's new in this version ? --> Rux + Manel
 - keep alghafa native tasks
 - Arabic MMLU native 
