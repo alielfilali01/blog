@@ -53,14 +53,47 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 - plot activity per month --> Rux
 - compare to other language leaderboards
 
+<table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+    <colgroup>
+        <col style="width: 30%;">
+        <col style="width: 15%;">
+        <col style="background-color: rgba(80, 15, 213, 0.5); width: 7%;">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>Total visits</td>
+            <td>45,000+</td>
+        </tr>
+        <tr>
+            <td>Total likes</td>
+            <td>119</td>
+        </tr>
+        <tr>
+            <td>Models evaluated </td>
+            <td>713</td>
+        </tr>
+        <tr>
+            <td>Model organizations</td>
+            <td>184</td>
+        </tr>
+        <tr>
+            <td>Academic citations</td>
+            <td>8</td>
+        </tr>
+    </tbody>
+</table>
+
+<!---
+|:--------------------|:-------:|
 | Total visits        |  45,135 |
 | Total likes         |     119 |
-| Models evaluated    |     698 |
+| Models evaluated    |     713 |
 | Model organizations |     184 |
 | Academic citations  |       8 |
+--->
 
 <p align="center">
-    <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/leaderboard-arabic-v2/leaderboard_comparison.png" />
+    <img src="assets/leaderboard-arabic-v2/leaderboard_comparison.png" />
 </p>
 
 ## Why do we need a new leaderboard ? --> Ali
