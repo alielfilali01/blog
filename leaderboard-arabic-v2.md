@@ -94,6 +94,7 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 
 <p align="center">
     <img src="assets/leaderboard-arabic-v2/leaderboard_comparison.png" />
+    <figcaption>Number of evaluated models versus uptime in months for different MCQ leaderboards hosted on huggingface. Languages covered: [Arabic](https://huggingface.co/spaces/OALL/Open-Arabic-LLM-Leaderboard), [Chinese](https://huggingface.co/spaces/BAAI/open_cn_llm_Leaderboard), [Chinese-Taiwan](https://huggingface.co/spaces/yentinglin/open-tw-llm-Leaderboard),  [Czech](https://huggingface.co/spaces/CZLC/BenCzechMark), [Dutch](https://huggingface.co/spaces/BramVanroy/open_dutch_llm_Leaderboard), [French](https://huggingface.co/spaces/le-leadboard/OpenLLMFrenchLeaderboard), [Hebrew](https://huggingface.co/spaces/hebrew-llm-Leaderboard), /Leaderboard), [Icelandic](https://huggingface.co/spaces/mideind/icelandic-llm-Leaderboard), [Italian](https://huggingface.co/spaces/mii-llm/open_ita_llm_Leaderboard), [Japanese](https://huggingface.co/spaces/llm-jp/open-japanese-llm-Leaderboard), [Korean v2](https://huggingface.co/spaces/upstage/open-ko-llm-Leaderboard), [Malay](https://huggingface.co/spaces/mesolitica/malay-llm-Leaderboard), [Persian](https://huggingface.co/spaces/PartAI/open-persian-llm-Leaderboard), [Polish](https://huggingface.co/spaces/speakleash/open_pl_llm_Leaderboard), [Portuguese](https://huggingface.co/spaces/eduagarcia/open_pt_llm_Leaderboard), [Spanish](https://huggingface.co/spaces/la-Leaderboard), /la-Leaderboard), [Turkish](https://huggingface.co/spaces/malhajar/OpenLLMTurkishLeaderboard). </figcaption>
 </p>
 
 ## Why do we need a new leaderboard ? --> Ali
@@ -148,6 +149,20 @@ The innovative aspect of ALRAGE lies in its evaluation methodology, which implem
 
 ## Results from V1 and V2 --> Rux + Basma
 - Some analysis on the two leaderboards
+
+<p align="center">
+    <img src="assets/leaderboard-arabic-v2/best_pretrained_by_range.png" />
+</p>
+
+<p align="center">
+    <img src="assets/leaderboard-arabic-v2/best_chat_by_range.png" />
+</p>
+
+<p align="center">
+    <img src="assets/leaderboard-arabic-v2/best_finetuned_by_range.png" />
+</p>
+
+
 [to be continued]
 
 ## Acknowledgements
@@ -165,16 +180,17 @@ The authors thank MBZUAI ...
 }
 ```
 ## References
-[1] [Open Arabic LLM Leaderboard](https://huggingface.co/spaces/OALL/Open-Arabic-LLM-Leaderboard)(Elfilali et al., 2024)
-[2] [AlGhafa Evaluation Benchmark for Arabic Language Models](https://aclanthology.org/2023.arabicnlp-1.21/) (Almazrouei et al., ArabicNLP 2023)
-[3] [The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants](https://aclanthology.org/2024.acl-long.44/)(Bandarkar et al., ACL, 2023)
-[4] [{EXAMS}: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual Question Answering"](https://aclanthology.org/2020.emnlp-main.438/)(Hardalov et al., EMNLP, 2023)
-[5] [ArabicMMLU: Assessing Massive Multitask Language Understanding in Arabic](https://aclanthology.org/2024.findings-acl.334/)(Koto et al., ACL, 2024)
-[6] [Jais and jais-chat: Arabic-centric foundation and instruction-tuned open generative large language models.] (https://arxiv.org/abs/2308.16149)(Sengupta et al., 2023).
-[7] [AraTrust: An Evaluation of Trustworthiness for LLMs in Arabic](https://arxiv.org/abs/2403.09017)(Alghamdi et al., 2024)
-[8] [LightEval: A lightweight framework for LLM evaluation](https://github.com/huggingface/lighteval)(Fourrier et al., 2023)
+- [1] [Open Arabic LLM Leaderboard](https://huggingface.co/spaces/OALL/Open-Arabic-LLM-Leaderboard) (Elfilali et al., 2024)
+- [2] [AlGhafa Evaluation Benchmark for Arabic Language Models](https://aclanthology.org/2023.arabicnlp-1.21/) (Almazrouei et al., ArabicNLP 2023)
+- [3] [The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants](https://aclanthology.org/2024.acl-long.44/) (Bandarkar et al., ACL, 2023)
+- [4] [{EXAMS}: A Multi-subject High School Examinations Dataset for Cross-lingual and Multilingual Question Answering"](https://aclanthology.org/2020.emnlp-main.438/) (Hardalov et al., EMNLP, 2023)
+- [5] [ArabicMMLU: Assessing Massive Multitask Language Understanding in Arabic](https://aclanthology.org/2024.findings-acl.334/)(Koto et al., ACL, 2024)
+- [6] [Jais and jais-chat: Arabic-centric foundation and instruction-tuned open generative large language models](https://arxiv.org/abs/2308.16149) (Sengupta et al., 2023)
+- [7] [AraTrust: An Evaluation of Trustworthiness for LLMs in Arabic](https://arxiv.org/abs/2403.09017) (Alghamdi et al., 2024)
+- [8] [LightEval: A lightweight framework for LLM evaluation](https://github.com/huggingface/lighteval) (Fourrier et al., 2023)
  
 ```
+
 @misc{OALL,
   author = {Elfilali, Ali and Alobeidli, Hamza and Fourrier, Clémentine and Boussaha, Basma El Amel and Cojocaru, Ruxandra and Habib, Nathan and Hacid, Hakim},
   title = {Open Arabic LLM Leaderboard},
@@ -328,4 +344,5 @@ The authors thank MBZUAI ...
   version = {0.3.0},
   url = {https://github.com/huggingface/lighteval}
 }
+
 ```
