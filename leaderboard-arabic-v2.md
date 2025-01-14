@@ -10,7 +10,7 @@ authors:
   org: OALL
 - user: tarickMorty
   guest: true
-  org: OALL
+  org: AI71
 - user: amztheory
   guest: true
   org: tiiuae
@@ -128,7 +128,7 @@ As part of this release, we also introduce ALRAGE (Arabic Language RAG Evaluatio
 - Ara-trust a safety benchmark
 - Arabic exams
 - Ara stem not available yet
-- Alrage --> Manel
+- ALRAGE --> Manel
 
 ### Benchmark Datasets
 In reforming the leaderboard, we follow two guiding principles: remove machine translated tasks, due to inherent lower quality and possible cultural bias, and add newly available high quality native or human curated benchmarks to increase the coverage of the evaluation.
@@ -142,7 +142,7 @@ We enrich the leaderboard by adding the following datasets, released in the past
 - [MedinaQA](https://huggingface.co/datasets/MBZUAI/MadinahQA)[5]: released as part of MBZUAI's ArabicMMLU project, this dataset focuses on general Arabic language and grammar aspects.
 - [AraTrust](https://huggingface.co/datasets/asas-ai/AraTrust)[7]: a dataset comprising of 522 human-written multiple-choice questions covering different aspects related to safety and truthfulness.
 
-Finally, We also introduce the ALRAGE task: Arabic Language Retrieval Augmented Generation Evaluation. 
+Finally, We also introduce the **ALRAGE** benchmark: Arabic Language Retrieval Augmented Generation Evaluation. 
 It introduces a comprehensive framework for evaluating Large Language Models' retrieval-augmented generation capabilities in Arabic. Built upon a meticulously curated dataset sourced from 40 Arabic books spanning diverse topics, from Arts & Literature to Technology & Innovation, the benchmark was created using meta-llama/Meta-Llama-3.1-70B for synthetic generation and validated by native Arabic speakers with a community sprint with argilla https://huggingface.co/spaces/OALL/alrage-sprint-progress. The dataset structure includes questions, ground-truth answers, candidate contexts retrieved through the BAAI/bge-m3 embedding model, and target candidate indices, all designed to authentically simulate real-world RAG scenarios in Arabic.
 
 The innovative aspect of ALRAGE lies in its evaluation methodology, which implements a LLM-as-judge metric within the lighteval framework. Using Qwen2.5-72B-Instruct as the judge model, the system evaluates generated responses through a structured Arabic prompt that compares the model's output against gold answers. The evaluation employs a nuanced 0-10 scoring rubric that assesses answer accuracy, relevance, and quality, with scores normalized to a 0-1 range for standardization. This technical implementation, manifested through a custom JudgeMetricWrapper class, provides a rigorous, reproducible method for evaluating Arabic language generation while maintaining sensitivity to Arabic linguistic nuances, effectively addressing the critical need for sophisticated evaluation metrics in Arabic NLP
