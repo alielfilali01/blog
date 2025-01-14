@@ -106,17 +106,15 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 
 ---
 
-Recent community discussions, including critiques of the Open Arabic LLM Leaderboard (OALL) and similar projects, have revealed significant gaps in current benchmarking approaches. Researchers, developers, and language enthusiasts have called for more direct evaluations of Arabic-centric tasks, greater transparency in benchmark creation, and more inclusive datasets that span different dialects, domains, and applications. Addressing these concerns has been a key driver behind the design of the new leaderboard.
+Recent discussions within the community, including critiques of the Open Arabic LLM Leaderboard (OALL) and similar initiatives, have highlighted key shortcomings in current benchmarking practices. Many researchers, developers, and language enthusiasts have emphasized the need for more direct evaluations of Arabic-specific tasks, increased transparency in how benchmarks are created, and the inclusion of more diverse datasets that reflect the breadth of Arabic dialects, domains, and real-world applications. These insights have played a central role in shaping the updated leaderboard.
 
-Arabic poses unique challenges and features that deserve specialized evaluation, beyond those captured by general-purpose NLP tasks. These include aspects such as Arabic grammar, complex morphology, dialectal diversity, and culturally sensitive safety-related questions. A leaderboard that focuses on these nuances can more effectively assess how well models perform in real-world Arabic language contexts.
+The Arabic language presents unique challenges and characteristics that require specialized evaluation beyond what general NLP tasks can capture. These include intricate grammar, rich and complex morphology, the diversity of spoken dialects, and culturally nuanced safety-related considerations. A leaderboard that addresses these factors can provide a clearer picture of how well models perform in real-world Arabic language contexts.
 
-A significant portion of the datasets and tasks used in the first version of OALL stemmed from content or contexts tied to non-Arabic-speaking regions. These tasks, when repurposed for Arabic, often failed to resonate with real-world use cases or address the practical needs of Arabic-speaking communities. Additionally, many of the tasks relied on direct translations from English, which frequently resulted in linguistic and contextual mismatches. Subtle morphological and syntactic nuances unique to Arabic were often lost in the translation process, making these tasks less reliable measures of true Arabic language understanding and modeling.
+In the first iteration of OALL, a large portion of datasets and tasks originated from non-Arabic-speaking contexts. When adapted to Arabic, these tasks often failed to reflect real-world use cases or meet the practical needs of Arabic-speaking communities. Many tasks were direct translations from English, which frequently introduced linguistic and contextual mismatches. This approach overlooked Arabic’s unique morphological and syntactic complexities, making the tasks less effective in measuring true language understanding and modeling capabilities.
 
-By incorporating evaluation tasks developed natively in Arabic, in this new leaderboard we try to capture essential aspects of the language, such as its rich morphology, nuanced syntax, and context-specific usage that are often overlooked in translated tasks. This shift ensures more authentic and meaningful benchmarks for assessing Arabic LLM performance.
+Additionally, some benchmarks from the first version of OALL became less effective over time as models achieved near-perfect scores, limiting their ability to differentiate incremental improvements. In response, the new leaderboard replaces these saturated benchmarks, introducing a more relevant and up-to-date suite of evaluation tasks.
 
-Also, it is worth mentioning that over time, we observed that some benchmarks used in the first version of OALL became saturated. Models achieved near-maximum scores, rendering these benchmarks less useful for distinguishing between incremental improvements. To address this, the new leaderboard removes or replaces such tasks, ensuring a more up-to-date evaluation suite.
-
-As part of this release, we also introduce ALRAGE (Arabic Language RAG Evaluation), a public, native Arabic benchmark designed to assess model performance in simulated RAG scenarios. ALRAGE evaluates how effectively models handle Arabic-specific challenges in retrieval and generation, offering a robust metric for tasks that simulate real-world usage of RAG-based systems.
+To address these gaps, the new leaderboard incorporates tasks that are natively developed in Arabic. These tasks are designed to capture the language’s distinctive features—such as its rich morphology, subtle syntax, and context-specific usage—elements that are often lost in translation-based benchmarks. This shift ensures that evaluations are more authentic and better aligned with the realities of Arabic language use.
 
 ---
 
@@ -138,8 +136,8 @@ From the first version of the Open Arabic LLM Leaderboard (OALL), we keep the fo
 
 We enrich the leaderboard by adding the following datasets, released in the past 9 months:
 - [Native Arabic MMLU](https://huggingface.co/datasets/MBZUAI/ArabicMMLU)[5]: a native Arabic benchmark released by MBZUAI and inspired by the original English MMLU dataset; consists of 40 tasks and almost 15,000 multiple-choice questions in Modern Standard Arabic (MSA), sourced from school exams. 
-- Human Translated MMLU[6]: a human translation of the original English MMLU dataset containing 57 tasks, curated by MBZUAI as part of the Jais project.
-- [MedinaQA](https://huggingface.co/datasets/MBZUAI/MadinahQA)[5]: released as part of MBZUAI's ArabicMMLU project, this dataset focuses on general Arabic language and grammar aspects.
+- Human Translated MMLU[6]: a human translation of the original English MMLU dataset containing 57 tasks, curated by Inception as part of the JAIS project, and published under the MBZUAI HF Organization.
+- [MedinaQA](https://huggingface.co/datasets/MBZUAI/MadinahQA)[5]: released by MBZUAI in order to foster the adoption of more native Arabic benchmarks. This dataset focuses on general Arabic language and grammar aspects.
 - [AraTrust](https://huggingface.co/datasets/asas-ai/AraTrust)[7]: a dataset comprising of 522 human-written multiple-choice questions covering different aspects related to safety and truthfulness.
 
 Finally, We also introduce the **ALRAGE** benchmark: Arabic Language Retrieval Augmented Generation Evaluation. 
