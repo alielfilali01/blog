@@ -7,10 +7,10 @@ authors:
   org: 2A2I
 - user: Manel-Hik
   guest: true
-  org: 2A2I
+  org: OALL
 - user: tarickMorty
   guest: true
-  org: AI71
+  org: OALL
 - user: amztheory
   guest: true
   org: tiiuae
