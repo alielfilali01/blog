@@ -143,15 +143,15 @@ The innovative aspect of ALRAGE lies in its evaluation methodology, which implem
 - Some analysis on the two leaderboards
 
 <p align="center">
-    <img src="assets/leaderboard-arabic-v2/best_pretrained_by_range.png" />
+    <img src="assets/leaderboard-arabic-v2/best_pretrained_by_range.png" width="700"/>
 </p>
 
 <p align="center">
-    <img src="assets/leaderboard-arabic-v2/best_chat_by_range.png" />
+    <img src="assets/leaderboard-arabic-v2/best_chat_by_range.png" width="700"/>
 </p>
 
 <p align="center">
-    <img src="assets/leaderboard-arabic-v2/best_finetuned_by_range.png" />
+    <img src="assets/leaderboard-arabic-v2/best_finetuned_by_range.png" width="700"/>
 </p>
 
 
