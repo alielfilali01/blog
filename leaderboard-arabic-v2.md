@@ -47,7 +47,7 @@ In May 2024, 2A2I, TII, and HuggingFace launched the first version of the [Open 
 
 In less than 7 months after its launch, the first version of the Open Arabic LLM Leaderboard quickly became a vital platform for the Arabic AI community, attracting over 40,000 visitors and more than 3,000 visits in the past month (January 2025). The HuggingFace space received over 100 likes and 8 citations on Google Scholar. The community submitted more than 700 models, ranging from 1B to over 70B parameters. The submitted models are original from more than 180 unique organizations making it one of the most active LLM evaluation leaderboards. Since its launch, the leaderboard sparked numerous engaging discussions across social media, HuggingFace, Reddit, and more, making it the most prominent Arabic leaderboard to date.
 
-<table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+<!-- <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
     <colgroup>
         <col style="width: 30%;">
         <col style="width: 15%;">
@@ -75,7 +75,7 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
             <td>8</td>
         </tr>
     </tbody>
-</table>
+</table> -->
 
 <!---
 |:--------------------|:-------:|
@@ -87,7 +87,7 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 --->
 Compared to leaderboards for other languages, the Open Arabic LLM leaderboard stands out as one of the most active, following closely behind the Korean, Polish, and Portuguese leaderboards, all within less than a year of its launch. Considering that Arabic is one of the most spoken languages globally, yet has relatively limited content available on the internet, these figures carry even greater significance compared to other languages.
 <p align="center">
-    <img src="assets/leaderboard-arabic-v2/leaderboard_comparison.png" />
+    <img src="assets/leaderboard-arabic-v2/leaderboard_comparison.png" width="200"/>
     <figcaption>Number of evaluated models versus uptime in months for different MCQ leaderboards hosted on huggingface. Languages covered: <a href="https://huggingface.co/spaces/OALL/Open-Arabic-LLM-Leaderboard">Arabic</a>, <a href="https://huggingface.co/spaces/BAAI/open_cn_llm_Leaderboard">Chinese</a>, <a href="https://huggingface.co/spaces/yentinglin/open-tw-llm-Leaderboard"></a>, <a href="https://huggingface.co/spaces/CZLC/BenCzechMark">Czech</a>, <a href="https://huggingface.co/spaces/BramVanroy/open_dutch_llm_Leaderboard">Dutch</a>, <a href="https://huggingface.co/spaces/le-leadboard/OpenLLMFrenchLeaderboard">French</a>, <a href="https://huggingface.co/spaces/hebrew-llm-Leaderboard/Leaderboard">Hebrew</a>, <a href="https://huggingface.co/spaces/mideind/icelandic-llm-Leaderboard">Icelandic</a>, <a href="https://huggingface.co/spaces/mii-llm/open_ita_llm_Leaderboard">Italian</a>, <a href="https://huggingface.co/spaces/llm-jp/open-japanese-llm-Leaderboard">Japanese</a>, <a href="https://huggingface.co/spaces/upstage/open-ko-llm-Leaderboard">Korean v2</a>, <a href="https://huggingface.co/spaces/mesolitica/malay-llm-Leaderboard">Malay</a>, <a href="https://huggingface.co/spaces/PartAI/open-persian-llm-Leaderboard">Persian</a>, <a href="https://huggingface.co/spaces/speakleash/open_pl_llm_Leaderboard">Polish</a>, <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_Leaderboard">Portuguese</a>, <a href="https://huggingface.co/spaces/la-Leaderboard/la-Leaderboard">Spanish</a>, <a href="https://huggingface.co/spaces/malhajar/OpenLLMTurkishLeaderboard">Turkish</a>.</figcaption>
 </p>
 
