@@ -120,7 +120,7 @@ To address these gaps, the new leaderboard incorporates tasks that are natively 
 - Ara-trust a safety benchmark
 - Arabic exams
 - Ara stem not available yet
-- ALRAGE --> Manel -->
+- ALRAGE -> Manel -->
 
 ### Benchmark Datasets
 In reforming the leaderboard, we follow two guiding principles: remove machine translated tasks, due to inherent lower quality and possible cultural bias, and add newly available high quality native or human curated benchmarks to increase the coverage of the evaluation.
@@ -181,8 +181,8 @@ The authors thank MBZUAI ...
 - [7] [AraTrust: An Evaluation of Trustworthiness for LLMs in Arabic](https://arxiv.org/abs/2403.09017) (Alghamdi et al., 2024)
 - [8] [LightEval: A lightweight framework for LLM evaluation](https://github.com/huggingface/lighteval) (Fourrier et al., 2023)
  
-```
 <!-- 
+```
 @misc{OALL,
   author = {Elfilali, Ali and Alobeidli, Hamza and Fourrier, Clémentine and Boussaha, Basma El Amel and Cojocaru, Ruxandra and Habib, Nathan and Hacid, Hakim},
   title = {Open Arabic LLM Leaderboard},
@@ -337,4 +337,5 @@ The authors thank MBZUAI ...
   url = {https://github.com/huggingface/lighteval}
 }
 
-``` -->
+``` 
+-->
