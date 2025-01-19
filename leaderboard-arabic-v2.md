@@ -92,11 +92,11 @@ Compared to leaderboards for other languages, the Open Arabic LLM leaderboard st
 </p>
 
 ## Why do we need a new leaderboard ? --> Ali
-- Translated tasks are not suitable/issues
+<!-- - Translated tasks are not suitable/issues
 - Cultural irrelevancy in previous version
 - We want Arabic related benchmarks: Arabic grammar, historical relevant,
 - Cite some discussions from the community (critics of OALL)
-- Justify the deletion of some benchmarks (saturation on some benchmarks, some of them are MT)
+- Justify the deletion of some benchmarks (saturation on some benchmarks, some of them are MT) -->
 
 ---
 
@@ -113,14 +113,14 @@ To address these gaps, the new leaderboard incorporates tasks that are natively 
 ---
 
 ## What's new in this version ? --> Rux + Manel
-- keep alghafa native tasks
+<!-- - keep alghafa native tasks
 - Arabic MMLU native 
 - Arabic-MMLU-HT
 - Madina QA (madina website)
 - Ara-trust a safety benchmark
 - Arabic exams
 - Ara stem not available yet
-- ALRAGE --> Manel
+- ALRAGE --> Manel -->
 
 ### Benchmark Datasets
 In reforming the leaderboard, we follow two guiding principles: remove machine translated tasks, due to inherent lower quality and possible cultural bias, and add newly available high quality native or human curated benchmarks to increase the coverage of the evaluation.
@@ -182,7 +182,7 @@ The authors thank MBZUAI ...
 - [8] [LightEval: A lightweight framework for LLM evaluation](https://github.com/huggingface/lighteval) (Fourrier et al., 2023)
  
 ```
-
+<!-- 
 @misc{OALL,
   author = {Elfilali, Ali and Alobeidli, Hamza and Fourrier, Clémentine and Boussaha, Basma El Amel and Cojocaru, Ruxandra and Habib, Nathan and Hacid, Hakim},
   title = {Open Arabic LLM Leaderboard},
@@ -337,4 +337,4 @@ The authors thank MBZUAI ...
   url = {https://github.com/huggingface/lighteval}
 }
 
-```
+``` -->
