@@ -29,6 +29,14 @@ authors:
 
 # The Open Arabic LLM Leaderboard 2
 
+<!-- ## Introduction -> Ali 
+We launched the Open Arabic LLM Leaderboard (OALL) in May 2024, and it was an initiative meant to advance Arabic NLP by providing accessible evaluation for large language models. By offering compute resources and ensuring evaluation integrity and reproducibility. The first version rapidly gained traction, with over 40,000 visits and fostering contributions from researchers and organizations worldwide. However, the experience also revealed critical areas for improvement.
+
+While the first version of the leaderboard addressed key barriers in Arabic NLP, it relied heavily on tasks adapted from non-Arabic contexts. These benchmarks, often translated from English, introduced cultural and linguistic mismatches that undermined their relevance to real-world Arabic use. Additionally, as models reached saturation on some tasks, the need for more challenging and representative benchmarks became evident.
+
+With all this in mind, the second iteration of the Open Arabic LLM Leaderboard aims to provide a richer, more authentic, and culturally aware evaluation framework. By introducing native Arabic benchmarks, improving task diversity, and addressing gaps in the first version, this update aspires to redefine how we evaluate Arabic LLMs.
+-->
+
 ## Current status of Arabic LLMs leaderboards --> Ali + Basma (DONE)
 The growing availability of LLMs supporting Arabic, both as monolingual and multilingual models, prompted the community to create dedicated Arabic language leaderboards. 
 
@@ -41,7 +49,20 @@ While these approaches helped spark initial interest in Arabic benchmarking, the
 
 These limitations underscore the need for a more unified, accessible, and transparent benchmarking platform—one that not only enables but encourages genuine and reproducible experimentation for the entire Arabic NLP community.
 
-In May 2024, 2A2I, TII, and HuggingFace launched the first version of the [Open Arabic LLM Leaderboard - OALL](https://huggingface.co/blog/leaderboard-arabic), featuring over 50 selective Arabic benchmarks including reading comprehension, sentiment analysis, and question answering among others. In September 2024, a collaboration between SDAIA and the King Salman Global Academy for Arabic Language introduced the [Balsam Index](https://benchmarks.ksaa.gov.sa/b/balsam), which includes approximately 1,400 datasets with 50,000 questions covering 67 tasks, such as grammar correction, paraphrasing, cause-and-effect classification, and text comprehension ... etc. Later, on 5th of December 2024, Inception and MBZUAI unveiled the [AraGen Leaderboard](https://huggingface.co/blog/leaderboard-3c3h-aragen), a generative tasks evaluation pipeline, which introduced the 3C3H evaluation metric, uses dynamic evaluation cycles with private testing, and provides a Native-Arabic Culturally-Aware generative tasks dataset to assess LLMs across four main tasks. Finally, on 19th of December 2024, [Scale](https://scale.com/)'s Safety, Evaluations, and Alignment Lab (SEAL) launched an [Arabic leaderboard](https://scale.com/leaderboard/arabic) as part of their multilingual leaderboards initiative, the benchmark empowering this leaderboard remains always private like all the other languages within the same family of leaderboards, and relies on human-preference evaluation, using a dataset of 1,000 Arabic prompts designed to enhance chatbot interaction capabilities across complex and culturally nuanced conversations.
+In May 2024, 2A2I, TII, and HuggingFace launched the first version of the [Open Arabic LLM Leaderboard - OALL](https://huggingface.co/blog/leaderboard-arabic), featuring over 50 selective Arabic benchmarks including reading comprehension, sentiment analysis, and question answering among others. 
+
+In September 2024, a collaboration between SDAIA and the King Salman Global Academy for Arabic Language introduced the [Balsam Index](https://benchmarks.ksaa.gov.sa/b/balsam), which includes approximately 1,400 datasets with 50,000 questions covering 67 tasks, such as grammar correction, paraphrasing, cause-and-effect classification, and text comprehension ... etc. 
+
+Later, on 5th of December 2024, Inception and MBZUAI unveiled the [AraGen Leaderboard](https://huggingface.co/blog/leaderboard-3c3h-aragen), a generative tasks evaluation pipeline, which introduced the 3C3H evaluation metric, uses dynamic evaluation cycles with private testing, and provides a Native-Arabic Culturally-Aware generative tasks dataset to assess LLMs across four main tasks. 
+
+Finally, on 19th of December 2024, [Scale](https://scale.com/)'s Safety, Evaluations, and Alignment Lab (SEAL) launched an [Arabic leaderboard](https://scale.com/leaderboard/arabic) as part of their multilingual leaderboards initiative, the benchmark empowering this leaderboard remains always private like all the other languages within the same family of leaderboards, and relies on human-preference evaluation, using a dataset of 1,000 Arabic prompts designed to enhance chatbot interaction capabilities across complex and culturally nuanced conversations.
+
+<!-- However, the prior work to what we present today rapidly gained traction when first released, with over 40,000 visits and fostering contributions from researchers and organizations worldwide, but the experience also revealed critical areas for improvement.
+
+While the first version of OALL tried to address key barriers in Arabic NLP, but it relied heavily on tasks adapted from non-Arabic contexts. These benchmarks, often translated from English, introduced cultural and linguistic mismatches that undermined their relevance to real-world Arabic use. Additionally, as models reached saturation on some tasks, the need for more challenging and representative benchmarks became evident.
+
+With all this in mind, the second iteration of the Open Arabic LLM Leaderboard aims to provide a richer, more authentic, and culturally aware evaluation framework. By introducing native Arabic benchmarks, improving task diversity, and addressing gaps in the first version, this update aspires to redefine how we evaluate Arabic LLMs. -->
+
 
 ## Impact of the previous leaderboard --> Ahmed + Basma
 
