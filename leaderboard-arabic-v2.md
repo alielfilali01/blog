@@ -37,7 +37,8 @@ While the first version of the leaderboard addressed key barriers in Arabic NLP,
 With all this in mind, the second iteration of the Open Arabic LLM Leaderboard aims to provide a richer, more authentic, and culturally aware evaluation framework. By introducing native Arabic benchmarks, improving task diversity, and addressing gaps in the first version, this update aspires to redefine how we evaluate Arabic LLMs.
 -->
 
-## Current status of Arabic LLMs leaderboards --> Ali + Basma (DONE)
+## Current status of Arabic LLMs leaderboards --> Ali + Basma
+
 The growing availability of LLMs supporting Arabic, both as monolingual and multilingual models, prompted the community to create dedicated Arabic language leaderboards. 
 
 Previously, Arabic-focused leaderboards were typically confined to narrow benchmarks introduced by specific authors, often as demos for their work. In these cases, the authors would set up leaderboards to demonstrate how models performed on a particular task or dataset. Alternatively, other leaderboards required users to run evaluations on their own computing resources and then submit a JSON file containing their results for display.
@@ -49,13 +50,13 @@ While these approaches helped spark initial interest in Arabic benchmarking, the
 
 These limitations underscore the need for a more unified, accessible, and transparent benchmarking platform—one that not only enables but encourages genuine and reproducible experimentation for the entire Arabic NLP community.
 
-In May 2024, 2A2I, TII, and HuggingFace launched the first version of the [Open Arabic LLM Leaderboard - OALL](https://huggingface.co/blog/leaderboard-arabic), featuring over 50 selective Arabic benchmarks including reading comprehension, sentiment analysis, and question answering among others. 
+In May 2024, 2A2I, TII, and HuggingFace launched the first version of the [Open Arabic LLM Leaderboard - OALL](https://huggingface.co/blog/leaderboard-arabic), featuring 14 benchmarks across a wide range of tasks including reading comprehension, sentiment analysis, and question answering among others. 
 
 In September 2024, a collaboration between SDAIA and the King Salman Global Academy for Arabic Language introduced the [Balsam Index](https://benchmarks.ksaa.gov.sa/b/balsam), which includes approximately 1,400 datasets with 50,000 questions covering 67 tasks, such as grammar correction, paraphrasing, cause-and-effect classification, and text comprehension ... etc. 
 
-Later, on 5th of December 2024, Inception and MBZUAI unveiled the [AraGen Leaderboard](https://huggingface.co/blog/leaderboard-3c3h-aragen), a generative tasks evaluation pipeline, which introduced the 3C3H evaluation metric, uses dynamic evaluation cycles with private testing, and provides a Native-Arabic Culturally-Aware generative tasks dataset to assess LLMs across four main tasks. 
+Later, on 5th of December 2024, Inception and MBZUAI announced the [AraGen Leaderboard](https://huggingface.co/blog/leaderboard-3c3h-aragen), the first generative tasks leaderbaord for Arabic, which introduced the 3C3H evaluation metric, uses dynamic evaluation cycles with private test, and provides a Native-Arabic Culturally-Aware generative tasks dataset, AraGen Bench to assess LLMs across four main tasks. 
 
-Finally, on 19th of December 2024, [Scale](https://scale.com/)'s Safety, Evaluations, and Alignment Lab (SEAL) launched an [Arabic leaderboard](https://scale.com/leaderboard/arabic) as part of their multilingual leaderboards initiative, the benchmark empowering this leaderboard remains always private like all the other languages within the same family of leaderboards, and relies on human-preference evaluation, using a dataset of 1,000 Arabic prompts designed to enhance chatbot interaction capabilities across complex and culturally nuanced conversations.
+And to end the year strong, on 19th of December 2024, [Scale](https://scale.com/)'s Safety, Evaluations, and Alignment Lab (SEAL) published an [Arabic leaderboard](https://scale.com/leaderboard/arabic) as part of their multilingual leaderboards, the benchmark empowering this leaderboard remains always private like all the other languages within the same family of leaderboards, and relies on human-preference evaluation, using a dataset of 1,000 Arabic prompts designed to enhance chatbot interaction capabilities across complex and culturally nuanced conversations.
 
 <!-- However, the prior work to what we present today rapidly gained traction when first released, with over 40,000 visits and fostering contributions from researchers and organizations worldwide, but the experience also revealed critical areas for improvement.
 
@@ -106,6 +107,7 @@ In less than 7 months after its launch, the first version of the Open Arabic LLM
 | Model organizations |     184 |
 | Academic citations  |       8 |
 --->
+
 Compared to leaderboards for other languages, the Open Arabic LLM leaderboard stands out as one of the most active, following closely behind the Korean, Polish, and Portuguese leaderboards, all within less than a year of its launch. Considering that Arabic is one of the most spoken languages globally, yet has relatively limited content available on the internet, these figures carry even greater significance compared to other languages.
 <p align="center">
     <img src="assets/leaderboard-arabic-v2/leaderboard_comparison.png" width="700"/>
@@ -124,8 +126,6 @@ Compared to leaderboards for other languages, the Open Arabic LLM leaderboard st
 - Cite some discussions from the community (critics of OALL)
 - Justify the deletion of some benchmarks (saturation on some benchmarks, some of them are MT) -->
 
----
-
 Recent discussions within the community, including critiques of the Open Arabic LLM Leaderboard (OALL) and similar initiatives, have highlighted key shortcomings in current benchmarking practices. Many researchers, developers, and language enthusiasts have emphasized the need for more direct evaluations of Arabic-specific tasks, increased transparency in how benchmarks are created, and the inclusion of more diverse datasets that reflect the breadth of Arabic dialects, domains, and real-world applications. These insights have played a central role in shaping the updated leaderboard.
 
 The Arabic language presents unique challenges and characteristics that require specialized evaluation beyond what general NLP tasks can capture. These include intricate grammar, rich and complex morphology, the diversity of spoken dialects, and culturally nuanced safety-related considerations. A leaderboard that addresses these factors can provide a clearer picture of how well models perform in real-world Arabic language contexts.
@@ -136,7 +136,6 @@ Additionally, some benchmarks from the first version of OALL became less effecti
 
 To address these gaps, the new leaderboard incorporates tasks that are natively developed in Arabic. These tasks are designed to capture the language’s distinctive features—such as its rich morphology, subtle syntax, and context-specific usage—elements that are often lost in translation-based benchmarks. This shift ensures that evaluations are more authentic and better aligned with the realities of Arabic language use.
 
----
 
 ## What's new in this version ? --> Rux + Manel
 <!-- - keep alghafa native tasks
