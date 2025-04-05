@@ -35,7 +35,7 @@ As part of our ongoing efforts, we are excited to share the following updates:
 
 
 <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.4.0/gradio.js"> </script>
-<gradio-app theme_mode="dark" space="inceptionai/AraGen-Leaderboard"></gradio-app>
+<gradio-app theme_mode="dark" space="inceptionai/Arabic-Leaderboards"></gradio-app>
 
 The following sections provide details about each of these updates.
 
@@ -69,7 +69,11 @@ In this latest AraGen release, we have expanded the dataset to include 340 pairs
 
 This allocation reflects the primary focus on question answering as the main use cases of any Language-Model/Chatbot/AI-Assistant, while still addressing other evaluation areas, particularly given the complexity of generating challenging queries in Arabic grammar and orthography.
 
-![Tasks Distribution (%)](https://huggingface.co/spaces/inceptionai/Arabic-Leaderboards/raw/main/assets/pictures/03-25/PercentageDistributionOfTasks.png)
+<p align="center">
+  <img src="https://huggingface.co/spaces/inceptionai/Arabic-Leaderboards/raw/main/assets/pictures/03-25/PercentageDistributionOfTasks.png"
+       alt="Tasks Distribution (%)"
+       width="400">
+</p>
 
 Additionally, we refined the **judge system prompt** to enhance clarity, even for smaller/weaker judge models. 
 
@@ -172,13 +176,19 @@ As part of our December release, we introduced 3C3H as a new evaluation measure 
 
 One emergent trend is that the various dimensions are almost perfectly correlated. In most cases, correct answers are scored as both highly helpful and harmless, while most models fail to maintain this correlation for the conciseness dimension. This generally reflects the way we train these models today, where more verbose answers are often rewarded as more helpful. This trend has recently caught the attention of the research community, as exemplified by the release of OpenAI’s GPT-4.5 model. According to their [use cases section](https://openai.com/index/introducing-gpt-4-5/), answers from GPT-4.5 are more concise than those from GPT-4, while still being equally helpful.
 
-![HeatMap for o1-2024-12-17](https://huggingface.co/spaces/inceptionai/Arabic-Leaderboards/raw/main/assets/pictures/03-25/o1-heatmap.png)
-
+<p align="center">
+  <img src="https://huggingface.co/spaces/inceptionai/Arabic-Leaderboards/raw/main/assets/pictures/03-25/o1-heatmap.png"
+       alt="HeatMap for o1-2024-12-17"
+       width="400">
+</p>
 
 A model that stood out in this analysis is “silma-ai/SILMA-9B-Instruct-v1.0”, which exhibited a higher conciseness score compared to other open-weight models—even those with larger sizes. However, this gain in conciseness came at the cost of helpfulness and other dimensions when compared to its base model, “google/gemma-2-9b-it”. We believe that this analysis, along with optimizing for 3C3H, will enable the community to develop better models through curated datasets while maintaining the correlation across all dimensions.
 
-![SILMA-9B-Instruct-v1.0 VS Gemma-2-9b-it HeatMaps](https://huggingface.co/spaces/inceptionai/Arabic-Leaderboards/raw/main/assets/pictures/03-25/silma-vs-gemma-heatmap.png)
-
+<p align="center">
+  <img src="https://huggingface.co/spaces/inceptionai/Arabic-Leaderboards/raw/main/assets/pictures/03-25/silma-vs-gemma-heatmap.jpeg"
+       alt="SILMA-9B-Instruct-v1.0 VS Gemma-2-9b-it HeatMaps"
+       width="900">
+</p>
 
 This is an ongoing effort to better understand how these dimensions are interconnected and how various scenarios and training recipes affect this relationship. Below, we provide a space where you can generate heatmaps for any combination of models of your choice. We hope the community finds it helpful in spotting additional trends that we may not have noticed. Ultimately, we aim for this tool to foster more discussion about evaluation and 3C3H, serving as a resource for others’ work.
 
@@ -195,7 +205,7 @@ One of the core capabilities of large language models (LLMs) is their ability to
 
 ### Dataset: Arabic IFEval 
 
-Our work took inspiration from [IFEval](https://arxiv.org/abs/2311.07911) dataset. IFEval, originally introduced by Google, provides a structured benchmark designed explicitly to evaluate LLMs on their ability to follow verifiable instructions. It consists of prompts containing specific, objectively measurable commands such as “use exactly three bullet points,” “include the word ‘innovation’ twice,” or “limit your answer to 100 words.”  English IFEval dataset contains around 500 prompts covering 25 different types of such verifiable instructions. Evaluation within IFEval is conducted through Python functions that automatically verify whether instructions are followed or not avoiding the need for human evaluators or another AI judge, this makes the evaluations **reproducible and unbiased**. While IFEval dataset has become the standard for assessing English-LLMs, a similarly detailed and structured resource is absent for Arabic, leaving a gap in evaluating Arabic LLMs' instrcution-following capabilities.
+Our work took inspiration from the [IFEval](https://arxiv.org/abs/2311.07911) dataset. IFEval, originally introduced by Google, provides a structured benchmark designed to evaluate LLMs on their ability to follow verifiable instructions. It consists of prompts containing specific, objectively measurable commands such as “use exactly three bullet points,” “include the word ‘innovation’ twice,” or “limit your answer to 100 words.”  English IFEval dataset contains around 500 prompts covering 25 different types of such verifiable instructions. Evaluation within IFEval is conducted through Python functions that automatically verify whether instructions are followed, avoiding the need for human evaluators or another AI judge. This makes the evaluations **reproducible and unbiased**. While IFEval has become the standard for assessing LLMs responding in English, a similarly detailed and structured resource is absent for Arabic.
 
 Construction of our **Arabic IFEval** dataset began by carefully adapting approximately 300 prompts from the original English IFEval. This wasn't a straightforward, word-for-word translation; instead, we thoughtfully adjusted prompts to clearly reflect Arabic linguistic nuances and cultural contexts. Instructions that made little sense in Arabic, such as those involving English-specific vowel constraints, were either adapted to equivalent Arabic linguistic challenges or omitted entirely. Cultural references specific to English-speaking contexts were replaced with culturally relevant or Arabic-language equivalents to maintain contextual clarity. Additionally, we created unique Arabic-specific samples from scratch, specifically designed to emphasize distinctive Arabic phonetics, orthographic characteristics, and morphology, such as the careful use of diacritical marks (tashkīl), phonetic constraints like avoiding certain letters (e.g., writing without using the letter Alef (ا)), and leveraging root-based morphology to challenge models' word-selection abilities. All prompts underwent rigorous expert validation by  Arabic linguists and domain experts who ensured grammatical accuracy, cultural appropriateness, and unambiguous clarity of each instruction.
 
@@ -306,23 +316,23 @@ We evaluated a broad range of LLMs on both the English IFEval benchmark and our 
   <summary>Instruction Following Leaderboard Sample</summary>
     
 **Table 5. Sample Scores from Instruction Following Benchmark** 
-| Rank | Model Name                         | Arabic Prompt-lvl (%) | English Prompt-lvl (%) |
-|------|------------------------------------|-----------------------|------------------------|
-| 1    | claude-3.5-sonnet                  | 72.5                  | 84.7                   |
-| 2    | gpt-4o-2024-08-06                  | 70.8                  | 79.4                   |
-| 3    | gpt-4o-mini-2024-07-18             | 68.1                  | 76.9                   |
-| 4    | claude-3.5-haiku                   | 67.1                  | 78.2                   |
-| 5    | Qwen/Qwen2.5-72B-Instruct          | 67.3                  | 83.5                   |
-| 6    | Qwen/Qwen2.5-32B-Instruct          | 60.4                  | 77.6                   |
-| 7    | google/gemma-2-27b-it              | 59.4                  | 76.1                   |
-| 8    | CohereForAI/aya-expanse-32b        | 56.7                  | 65.1                   |
+| Rank | Model Name                           | Arabic Prompt-lvl (%) | English Prompt-lvl (%) |
+|------|--------------------------------------|-----------------------|------------------------|
+| 1    | claude-3.5-sonnet                    | 72.5                  | 84.7                   |
+| 2    | gpt-4o-2024-08-06                    | 70.8                  | 79.4                   |
+| 3    | gpt-4o-mini-2024-07-18               | 68.1                  | 76.9                   |
+| 4    | claude-3.5-haiku                     | 67.1                  | 78.2                   |
+| 5    | Qwen/Qwen2.5-72B-Instruct            | 67.3                  | 83.5                   |
+| 6    | Qwen/Qwen2.5-32B-Instruct            | 60.4                  | 77.6                   |
+| 7    | google/gemma-2-27b-it                | 59.4                  | 76.1                   |
+| 8    | CohereForAI/aya-expanse-32b          | 56.7                  | 65.1                   |
 | 9    | CohereForAI/c4ai-command-r7b-12-2024 | 56.4                  | 74.9                   |
-| 10   | meta-llama/Llama-3.3-70B-Instruct  | 58.2                  | 88.2                   |
+| 10   | meta-llama/Llama-3.3-70B-Instruct    | 58.2                  | 88.2                   |
 
 </details>
 
 
 ## Upcoming Work
 
-As part of our work we will be adding and updating more leaderboards to the Arabic-Leaderboards Space as our internal work progress.
-In the upcoming releases, we expect to put online a leaderbaord for visual question-answering across multiple tasks powered by camel-bench and kitab from our collaborators at MBZUAI.
+As part of our work we will be adding and updating more leaderboards to the Arabic-Leaderboards Space as our internal work progresses.
+In upcoming releases, we expect to publish a leaderboard for visual question-answering across multiple tasks, powered by camel-bench and kitab from our collaborators at MBZUAI.
